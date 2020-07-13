@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q 적당히 생각하는 커피 한잔의 가격은 얼마입니까?"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="200dp"/>
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="65dp"
+        android:backgroundTint="#9E7231"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:onClick="clickcoffeebox"/>
+
+
+</LinearLayout>

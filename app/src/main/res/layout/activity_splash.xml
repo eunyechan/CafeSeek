@@ -5,11 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".SplashActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Cafe Seek"
+       android:textSize="50sp"
+       android:gravity="center_horizontal"
+       android:textStyle="bold"
+       android:textColor="#3A8CB1"
+       android:layout_marginTop="20dp"/>
 
    <ImageView
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_height="400dp"
        android:src="@drawable/logo151314"
        android:scaleType="fitXY"
        android:id="@+id/iv"/>

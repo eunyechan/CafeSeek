@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CafeSeek</string>
+    <string name="facebook_app_id">kr.co.eyc.cafeseek</string>
+    <string name="fb_login_protocol_scheme">facebook_login protocol scheme</string>
+
+
 </resources>
