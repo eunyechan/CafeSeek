@@ -14,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".NavigationActivity"></activity>
         <activity android:name=".ComboboxActivity" />
         <activity android:name=".FacebookActivity" /> <!-- Facebook -->
         <meta-data

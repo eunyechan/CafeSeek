@@ -3,8 +3,6 @@ package kr.co.eyc.cafeseek;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,8 +17,6 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
@@ -37,13 +33,11 @@ import com.kakao.usermgmt.response.model.UserAccount;
 import com.kakao.util.exception.KakaoException;
 
 
-import org.json.JSONObject;
 
 import java.util.Arrays;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static com.kakao.util.helper.Utility.getKeyHash;
 
 
 
@@ -181,8 +175,10 @@ public class MainActivity extends AppCompatActivity {
     //카카오 끝
 
     public void clickinput(View view) {
-        Intent intent= new Intent(getApplicationContext(), ComboboxActivity.class);
+        Intent intent= new Intent(this, NavigationActivity.class);
         startActivity(intent);
+
+
     }
 }
 
