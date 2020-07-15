@@ -54,11 +54,11 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="410dp"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="16dp"/>
+        android:paddingLeft="26dp"
+        android:paddingRight="14dp"/>
 
     <Button
         android:id="@+id/logout_btn"

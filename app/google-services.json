@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "829695559413",
+    "firebase_url": "https://cafeseek3.firebaseio.com",
+    "project_id": "cafeseek3",
+    "storage_bucket": "cafeseek3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829695559413:android:5f19b627419e5e075e67bc",
+        "android_client_info": {
+          "package_name": "kr.co.eyc.cafeseek"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829695559413-5tue34rqv1g52nl8qah1o263ndrel4k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPgv1dFfn2w7gNfJ4j5rF5lfxjAdKeop0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829695559413-5tue34rqv1g52nl8qah1o263ndrel4k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
