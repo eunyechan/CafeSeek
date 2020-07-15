@@ -13,6 +13,14 @@
         android:layout_marginTop="15dp"/>
 
     <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
         android:id="@+id/iv"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -36,26 +44,24 @@
         android:layout_marginTop="80dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/textbackground"
-        android:text="기본정보"
-        android:textSize="17sp"
-        android:textColor="#FF000000"/>
+        android:hint=" 자기소개 입력"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp"
         android:layout_marginLeft="10dp"
+        android:background="@drawable/buttonbackground"
         android:text="image upload"
-        android:backgroundTint="#FFFFFFFF"
-        android:background="@drawable/textbackground"/>
+        android:padding="16dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="정렬"
+        android:background="@drawable/buttonbackground"
         android:layout_marginTop="190dp"
         android:layout_marginRight="20dp"
         android:layout_alignParentRight="true"/>
-
 
 </RelativeLayout>

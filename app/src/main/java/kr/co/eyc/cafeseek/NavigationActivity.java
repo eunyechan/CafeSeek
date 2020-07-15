@@ -13,6 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class NavigationActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager= getSupportFragmentManager();
+    
 
     private HomeFragment homeFragment= new HomeFragment();
     private FavoriteFragment favoriteFragment= new FavoriteFragment();

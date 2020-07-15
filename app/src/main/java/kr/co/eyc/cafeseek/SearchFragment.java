@@ -11,13 +11,7 @@ import androidx.fragment.app.Fragment;
 
 public class SearchFragment extends Fragment {
 
-    ViewGroup viewGroup;
-
-    @Nullable
-    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        viewGroup= (ViewGroup) inflater.inflate(R.layout.fragment_search, container, false);
-
-        return viewGroup;
+        return inflater.inflate(R.layout.fragment_search, container, false);
     }
 }

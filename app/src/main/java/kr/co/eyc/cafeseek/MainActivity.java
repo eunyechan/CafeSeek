@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tv_email;
     CircleImageView iv_pro;
     TextView tv_nickname;
+    Profile imgUrl;
+    Profile nickname;
 
     private LoginButton facebook_login;
     private Button CustomloginButton;
@@ -61,10 +63,6 @@ public class MainActivity extends AppCompatActivity {
         // (setContentView 보다 먼저 실행되어야합니다 안그러면 에러)
         setContentView(R.layout.activity_main);
 
-        //카카오
-        tv_email= findViewById(R.id.tv_email);
-        iv_pro= findViewById(R.id.iv_pro);
-        tv_nickname= findViewById(R.id.tv_nickname);
 
         Session.getCurrentSession().addCallback(sessionCallback);
         requesUserInfo();
@@ -118,7 +116,8 @@ public class MainActivity extends AppCompatActivity {
     ISessionCallback sessionCallback= new ISessionCallback() {
         @Override
         public void onSessionOpened() {
-            Toast.makeText(MainActivity.this, "로그인 세션성공", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "로그인 성공", Toast.LENGTH_SHORT).show();
+            requesUserInfo();
 
         }
 
@@ -142,18 +141,15 @@ public class MainActivity extends AppCompatActivity {
                 UserAccount userAccount= result.getKakaoAccount();
                 if (userAccount== null) return;
 
-                tv_email.setText(userAccount.getEmail());
-
-
                 Profile profile= userAccount.getProfile();
                 if (profile== null) return;
 
-                String nickname= profile.getNickname();
-                String imgUrl= profile.getProfileImageUrl();
-                String thumbnailImgUrl= profile.getThumbnailImageUrl();
+                ProFile.imgUrl= profile.getProfileImageUrl();
+                ProFile.nickName= profile.getNickname();
 
-                tv_nickname.setText(nickname);
-                Glide.with(MainActivity.this).load(imgUrl).into(iv_pro);
+                Intent intent= new Intent(getApplicationContext(), NavigationActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }//카카오 시작
