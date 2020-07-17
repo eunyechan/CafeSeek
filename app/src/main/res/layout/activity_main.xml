@@ -14,19 +14,18 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:alpha="0.6"
-        android:background="@drawable/ca1" />
+        android:background="@drawable/ca1"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cafe Seek"
-        android:textSize="50sp"
-        android:gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textColor="#3A8CB1"
-        android:layout_marginTop="20dp"/>
-
-
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="420dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"/>
 
     <TextView
         android:id="@+id/tv"

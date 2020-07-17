@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,10 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.Login;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
@@ -31,8 +35,11 @@ import com.kakao.usermgmt.response.MeV2Response;
 import com.kakao.usermgmt.response.model.Profile;
 import com.kakao.usermgmt.response.model.UserAccount;
 import com.kakao.util.exception.KakaoException;
+import com.kakao.util.helper.log.Tag;
 
 
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Arrays;
 
@@ -50,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
     Profile nickname;
 
     private LoginButton facebook_login;
-    private Button CustomloginButton;
     private CallbackManager callbackManager;
 
+    ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         // (setContentView 보다 먼저 실행되어야합니다 안그러면 에러)
         setContentView(R.layout.activity_main);
 
+        iv= findViewById(R.id.iv);
+
 
         Session.getCurrentSession().addCallback(sessionCallback);
         requesUserInfo();
@@ -72,6 +81,16 @@ public class MainActivity extends AppCompatActivity {
         facebook_login.setReadPermissions("email");
         callbackManager= CallbackManager.Factory.create(); //로그인 응답처리할 콜백 관리자
         
+        facebook();
+    }
+
+
+    //페이스북
+    void facebook_login() {
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+    }
+
+    void facebook(){
         facebook_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,11 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //페이스북
-    private void facebook_login() {
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
-    }
 
+    //카카오 시작
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
@@ -152,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }//카카오 시작
+    }
 
     public void ClickLogout(View view) {
         UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {

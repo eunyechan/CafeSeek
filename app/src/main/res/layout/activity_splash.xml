@@ -8,24 +8,22 @@
     android:background="#FFFFFF"
     tools:context=".SplashActivity">
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Cafe Seek"
-       android:textSize="50sp"
-       android:gravity="center_horizontal"
-       android:textStyle="bold"
-       android:textColor="#3A8CB1"
-       android:layout_marginTop="20dp"/>
 
    <ImageView
        android:layout_width="match_parent"
-       android:layout_height="400dp"
-       android:src="@drawable/logo151314"
-       android:scaleType="fitXY"
+       android:layout_height="120dp"
+       android:layout_marginTop="20dp"
+       android:padding="8dp"
+       android:textColor="#77341E"
+       android:src="@drawable/logo"/>
+
+   <ImageView
+       android:padding="16dp"
+       android:layout_width="match_parent"
+       android:layout_height="500dp"
+       android:layout_marginTop="30dp"
+       android:src="@drawable/animal"
        android:id="@+id/iv"/>
-
-
 
 
 </LinearLayout>

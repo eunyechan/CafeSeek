@@ -1,158 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:weightSum="5"
     android:padding="8dp">
 
-    <TextView
-        android:id="@+id/home"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="계절"
-        android:textColor="#FF000000"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="20sp"/>
+        app:tabIndicatorColor="?colorAccent"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="#FFFFFFFF" />
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="4"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca5"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca5"
-            android:layout_marginLeft="8dp"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca3"
-            android:layout_marginLeft="8dp"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_dehaze_black_24dp"
-            android:layout_marginTop="35dp"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="지역"
-        android:textColor="#FF000000"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="20sp"/>
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca3"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca5"
-            android:layout_marginLeft="8dp"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca5"
-            android:layout_marginLeft="8dp"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_dehaze_black_24dp"
-            android:layout_marginTop="35dp"/>
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="분위기"
-        android:textColor="#FF000000"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_marginLeft="20dp"
-        android:textSize="20sp"/>
-
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca3"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca3"
-            android:layout_marginLeft="8dp"/>
-
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/ca5"
-            android:layout_marginLeft="8dp"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_dehaze_black_24dp"
-            android:layout_marginTop="35dp"/>
-
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
