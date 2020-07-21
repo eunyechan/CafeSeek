@@ -13,6 +13,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -34,19 +35,13 @@ public class NavigationActivity extends AppCompatActivity {
 
     private BottomNavigationView BottomNavigationView;
 
-    private TabLayout tabLayout;
-    private ArrayList<String> tabNames = new ArrayList<>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-
-       /* TabLayout tabLayout= findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("계절"));
-        tabLayout.addTab(tabLayout.newTab().setText("분위기"));
-        tabLayout.addTab(tabLayout.newTab().setText("지역"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);*/
 
         BottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -89,30 +84,7 @@ public class NavigationActivity extends AppCompatActivity {
         });
 
 
-    /*void ViewPager(){
-        final ViewPager viewPager= findViewById(R.id.view_pager);
-        ContentsPagerAdapter adapter= new ContentsPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
-
-    }*/
-
 
     }
+
 }

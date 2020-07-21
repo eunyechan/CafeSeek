@@ -3,217 +3,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="8dp">
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:orientation="vertical">
 
-<androidx.recyclerview.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
     <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/buttonbackground"/>
 
-
-    <LinearLayout
-        android:layout_marginTop="15dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF7F1">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="White"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#999999"/>
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF7F1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF3F3ED"
+                android:orientation="vertical">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/tuuli"
-            android:background="@drawable/image_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="White"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/tuuli"
-            android:background="@drawable/image_background"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/tuuli"
-            android:background="@drawable/image_background"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F3F3ED">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#999999"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:background="#F3F3ED"
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/ca5"
-            android:background="@drawable/image_background"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/ca5"
-            android:background="@drawable/image_background"/>
-
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/ca5"
-            android:background="@drawable/image_background"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF7F1">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wood"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#999999"/>
-    </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:background="#FFF7F1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF7F1"
+                android:orientation="vertical">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Black"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    ndroid:nestedScrollingEnabled="false"/>
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F3F3ED">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ViewCafe"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#999999"/>
-    </LinearLayout>
+            </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:weightSum="3"
-        android:background="#F3F3ED"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF3F3ED"
+                android:orientation="vertical">
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Wood"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    ndroid:nestedScrollingEnabled="false"/>
+            </LinearLayout>
 
-        <ImageView
-            android:layout_weight="1"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="6dp"
-            android:src="@drawable/japi"
-            android:background="@drawable/image_background"/>
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFF7F1"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="ViewCafe"
+                    android:textColor="#999999"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    ndroid:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

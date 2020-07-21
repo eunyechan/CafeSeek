@@ -4,68 +4,96 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+import androidx.recyclerview.widget.RecyclerView;
+
+
+import java.util.ArrayList;
 
 
 public class HomeFragment extends Fragment {
-    ViewPager viewPager;
-    ViewPagerAdapter viewPagerAdapter;
 
-    public static HomeFragment newInstance() {
-        HomeFragment fragment = new HomeFragment();
-        return fragment;
+    ArrayList<Item> items1= new ArrayList<>();
+    ArrayList<Item> items2= new ArrayList<>();
+    ArrayList<Item> items3= new ArrayList<>();
+    ArrayList<Item> items4= new ArrayList<>();
+
+    MyAdapter adapter1;
+    MyAdapter adapter2;
+    MyAdapter adapter3;
+    MyAdapter adapter4;
+
+    RecyclerView recyclerview1;
+    RecyclerView recyclerview2;
+    RecyclerView recyclerview3;
+    RecyclerView recyclerview4;
+
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        items1.add( new Item(R.drawable.japi));
+        items1.add( new Item(R.drawable.japi));
+        items1.add( new Item(R.drawable.japi));
+        items1.add( new Item(R.drawable.japi));
+        items1.add( new Item(R.drawable.japi));
+        items1.add( new Item(R.drawable.japi));
+
+        items2.add( new Item(R.drawable.tuuli));
+        items2.add( new Item(R.drawable.tuuli));
+        items2.add( new Item(R.drawable.tuuli));
+        items2.add( new Item(R.drawable.tuuli));
+        items2.add( new Item(R.drawable.tuuli));
+        items2.add( new Item(R.drawable.tuuli));
+
+        items3.add( new Item(R.drawable.ca1));
+        items3.add( new Item(R.drawable.ca1));
+        items3.add( new Item(R.drawable.ca1));
+        items3.add( new Item(R.drawable.ca1));
+        items3.add( new Item(R.drawable.ca1));
+        items3.add( new Item(R.drawable.ca1));
+
+        items4.add( new Item(R.drawable.ca3));
+        items4.add( new Item(R.drawable.ca3));
+        items4.add( new Item(R.drawable.ca3));
+        items4.add( new Item(R.drawable.ca3));
+        items4.add( new Item(R.drawable.ca3));
+        items4.add( new Item(R.drawable.ca3));
+
+
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        viewPager = (ViewPager) view.findViewById(R.id.view_pager);
-        viewPagerAdapter= new ViewPagerAdapter(getChildFragmentManager());
-        viewPager.setAdapter(viewPagerAdapter);
-        return view;
+       ViewGroup rootView= (ViewGroup)inflater.inflate(R.layout.fragment_home, container, false);
+       recyclerview1= rootView.findViewById(R.id.recycler1);
+       recyclerview2= rootView.findViewById(R.id.recycler2);
+       recyclerview3= rootView.findViewById(R.id.recycler3);
+       recyclerview4= rootView.findViewById(R.id.recycler4);
 
-    }
-    public static class ViewPagerAdapter extends FragmentStatePagerAdapter {
-        private static final int NUM_ITEMS = 3;
 
-        public ViewPagerAdapter(@NonNull FragmentManager fm) {
-            super(fm);
-        }
 
-        @NonNull
-        @Override
-        public Fragment getItem(int position) {
-            if (position== 0){
-                return   WeatherFragment.newInstance();
-            }else if (position== 1){
-                return MoodFragment.newInstance();
-            }else {
-                return AreaFragment.newInstance();
-            }
-        }
+       adapter1= new MyAdapter(getActivity(), items1);
+       adapter2= new MyAdapter(getActivity(), items2);
+       adapter3= new MyAdapter(getActivity(), items3);
+       adapter4= new MyAdapter(getActivity(), items4);
 
-        @Override
-        public int getCount() {
-            return NUM_ITEMS;
-        }
 
-        public CharSequence getPageTitle(int position){
+       recyclerview1.setAdapter(adapter1);
+       recyclerview2.setAdapter(adapter2);
+       recyclerview3.setAdapter(adapter3);
+       recyclerview4.setAdapter(adapter4);
 
-            if (position== 0){
-                return "Weatherfragment";
-            }
-            else {
-                return "Moodfragment";
-            }
-        }
+       adapter1.notifyDataSetChanged();
+
+        return rootView;
     }
 }

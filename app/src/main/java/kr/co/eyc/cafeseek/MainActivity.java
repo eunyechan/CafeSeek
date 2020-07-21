@@ -190,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent(this, NavigationActivity.class);
         startActivity(intent);
 
+        finish();
 
     }
 }
