@@ -7,9 +7,10 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.SearchView
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
         android:background="@drawable/buttonbackground"/>
 
     <ScrollView
@@ -43,8 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    android:nestedScrollingEnabled="false"/>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
             </LinearLayout>
 
 
@@ -70,8 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    ndroid:nestedScrollingEnabled="false"/>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
             </LinearLayout>
 
@@ -99,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    ndroid:nestedScrollingEnabled="false"/>
+                    android:layout_marginRight="8dp"/>
             </LinearLayout>
 
 
@@ -125,8 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    ndroid:nestedScrollingEnabled="false"/>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
             </LinearLayout>
 

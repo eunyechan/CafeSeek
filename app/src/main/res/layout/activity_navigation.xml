@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NavigationActivity"
-    android:padding="8dp">
+    tools:context=".NavigationActivity">
 
 
         <FrameLayout
@@ -21,7 +20,8 @@
             android:layout_height="90dp"
             android:layout_alignParentBottom="true"
             android:background="#FFFFFFFF"
+            app:itemTextColor="#305E83"
+            app:itemIconTint="@color/bottomnav_item_color"
             app:menu="@menu/menu_bottom"/>
-
 
 </LinearLayout>

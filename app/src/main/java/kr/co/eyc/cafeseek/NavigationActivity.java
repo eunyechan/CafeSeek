@@ -45,6 +45,10 @@ public class NavigationActivity extends AppCompatActivity {
 
         BottomNavigationView = findViewById(R.id.bottom_navigation);
 
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.addToBackStack(null);
+        transaction.replace(R.id.frame, homeFragment).commitAllowingStateLoss();
+
 
         Navigation();
     }
@@ -57,25 +61,26 @@ public class NavigationActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
+                transaction.addToBackStack(null);
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home: {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, homeFragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame, homeFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_favorite: {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, favoriteFragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame, favoriteFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_search: {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, searchFragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame, searchFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_group: {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, usersFragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame, usersFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_person: {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, userFragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.frame, userFragment).commitAllowingStateLoss();
                         break;
                     }
                 }

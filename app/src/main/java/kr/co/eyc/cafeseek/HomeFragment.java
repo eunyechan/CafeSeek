@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    ArrayList<Item> items1= new ArrayList<>();
-    ArrayList<Item> items2= new ArrayList<>();
-    ArrayList<Item> items3= new ArrayList<>();
-    ArrayList<Item> items4= new ArrayList<>();
+    ArrayList<Item> white= new ArrayList<>();
+    ArrayList<Item> black= new ArrayList<>();
+    ArrayList<Item> wood= new ArrayList<>();
+    ArrayList<Item> cafeview= new ArrayList<>();
 
     MyAdapter adapter1;
     MyAdapter adapter2;
@@ -34,38 +34,37 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerview4;
 
 
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        items1.add( new Item(R.drawable.japi));
-        items1.add( new Item(R.drawable.japi));
-        items1.add( new Item(R.drawable.japi));
-        items1.add( new Item(R.drawable.japi));
-        items1.add( new Item(R.drawable.japi));
-        items1.add( new Item(R.drawable.japi));
+        white.add( new Item(R.drawable.white1));
+        white.add( new Item(R.drawable.white2));
+        white.add( new Item(R.drawable.white3));
+        white.add( new Item(R.drawable.white4));
 
-        items2.add( new Item(R.drawable.tuuli));
-        items2.add( new Item(R.drawable.tuuli));
-        items2.add( new Item(R.drawable.tuuli));
-        items2.add( new Item(R.drawable.tuuli));
-        items2.add( new Item(R.drawable.tuuli));
-        items2.add( new Item(R.drawable.tuuli));
 
-        items3.add( new Item(R.drawable.ca1));
-        items3.add( new Item(R.drawable.ca1));
-        items3.add( new Item(R.drawable.ca1));
-        items3.add( new Item(R.drawable.ca1));
-        items3.add( new Item(R.drawable.ca1));
-        items3.add( new Item(R.drawable.ca1));
+        black.add( new Item(R.drawable.black1));
+        black.add( new Item(R.drawable.black2));
+        black.add( new Item(R.drawable.black3));
+        black.add( new Item(R.drawable.black4));
 
-        items4.add( new Item(R.drawable.ca3));
-        items4.add( new Item(R.drawable.ca3));
-        items4.add( new Item(R.drawable.ca3));
-        items4.add( new Item(R.drawable.ca3));
-        items4.add( new Item(R.drawable.ca3));
-        items4.add( new Item(R.drawable.ca3));
+
+        wood.add( new Item(R.drawable.wood1));
+        wood.add( new Item(R.drawable.wood2));
+        wood.add( new Item(R.drawable.wood3));
+        wood.add( new Item(R.drawable.wood4));
+
+
+        cafeview.add( new Item(R.drawable.ca3));
+        cafeview.add( new Item(R.drawable.ca3));
+        cafeview.add( new Item(R.drawable.ca3));
+        cafeview.add( new Item(R.drawable.ca3));
+
+        adapter1= new MyAdapter(getActivity(), white);
+        adapter2= new MyAdapter(getActivity(), black);
+        adapter3= new MyAdapter(getActivity(), wood);
+        adapter4= new MyAdapter(getActivity(), cafeview);
 
 
     }
@@ -74,26 +73,17 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        ViewGroup rootView= (ViewGroup)inflater.inflate(R.layout.fragment_home, container, false);
+
        recyclerview1= rootView.findViewById(R.id.recycler1);
        recyclerview2= rootView.findViewById(R.id.recycler2);
        recyclerview3= rootView.findViewById(R.id.recycler3);
        recyclerview4= rootView.findViewById(R.id.recycler4);
-
-
-
-       adapter1= new MyAdapter(getActivity(), items1);
-       adapter2= new MyAdapter(getActivity(), items2);
-       adapter3= new MyAdapter(getActivity(), items3);
-       adapter4= new MyAdapter(getActivity(), items4);
-
 
        recyclerview1.setAdapter(adapter1);
        recyclerview2.setAdapter(adapter2);
        recyclerview3.setAdapter(adapter3);
        recyclerview4.setAdapter(adapter4);
 
-       adapter1.notifyDataSetChanged();
-
-        return rootView;
+       return rootView;
     }
 }
