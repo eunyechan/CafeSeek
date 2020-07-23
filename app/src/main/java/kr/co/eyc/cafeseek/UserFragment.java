@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,6 @@ import androidx.fragment.app.Fragment;
 import androidx.loader.content.CursorLoader;
 
 import com.bumptech.glide.Glide;
-import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -37,7 +37,7 @@ public class UserFragment extends Fragment {
     ImageView iv2;
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_user, container, false);
+        final View view= inflater.inflate(R.layout.fragment_user, container, false);
         Button button= view.findViewById(R.id.btn_upload);
         iv= view.findViewById(R.id.iv);
         name= view.findViewById(R.id.kakao_name);
@@ -49,7 +49,11 @@ public class UserFragment extends Fragment {
 
 
 
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(Intent.ACTION_PICK);

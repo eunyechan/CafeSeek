@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:padding="8dp">
 
 
    <ImageView
        android:id="@+id/imageview"
-       android:layout_width="370dp"
+       android:layout_width="match_parent"
        android:layout_height="500dp"
-       android:layout_margin="20dp"
+       android:layout_marginTop="120dp"
        android:textColor="#77341E"
        android:src="@drawable/logo"/>
 
