@@ -4,28 +4,42 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:ndroid="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFF6F1DC">
 
-    <androidx.appcompat.widget.SearchView
-        android:layout_width="380dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="15dp"
-        android:background="@drawable/buttonbackground"/>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/buttonbackground"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFBBBCBC"/>
 
     <ScrollView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFF3F3ED"
                 android:orientation="vertical">
 
                 <TextView
@@ -47,11 +61,15 @@
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFBBBCBC"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFFF7F1"
                 android:orientation="vertical">
 
                 <TextView
@@ -74,11 +92,15 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFBBBCBC"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFF3F3ED"
                 android:orientation="vertical">
 
                 <TextView
@@ -101,11 +123,15 @@
                     android:layout_marginRight="8dp"/>
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFBBBCBC"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FFFFF7F1"
                 android:orientation="vertical">
 
                 <TextView
@@ -114,7 +140,7 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:text="ViewCafe"
+                    android:text="Sunny"
                     android:textColor="#999999"
                     android:textSize="18sp"
                     android:textStyle="bold" />
