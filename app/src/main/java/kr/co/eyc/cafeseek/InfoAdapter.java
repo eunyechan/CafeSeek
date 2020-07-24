@@ -5,12 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-
-public class TabAdapter extends FragmentStatePagerAdapter {
+public class InfoAdapter extends FragmentStatePagerAdapter {
 
     int tabCount;
 
-    public TabAdapter(@NonNull FragmentManager fm, int tabCount) {
+    public InfoAdapter(@NonNull FragmentManager fm, int tabCount) {
         super(fm);
 
         this.tabCount= tabCount;
@@ -21,11 +20,18 @@ public class TabAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0 :
-                cafefragment cafefragment= new cafefragment();
-                return cafefragment;
+                Tab1 tab1= new Tab1();
+                return tab1;
             case 1 :
-                userfragment2 userfragment2= new userfragment2();
-                return userfragment2;
+                Tab2 tab2= new Tab2();
+                return tab2;
+            case 2 :
+                Tab3 tab3= new Tab3();
+                return tab3;
+            case 3 :
+                Tab4 tab4= new Tab4();
+                return tab4;
+
             default:
                 return null;
         }

@@ -1,34 +1,37 @@
 package kr.co.eyc.cafeseek;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter {
+public class MyAdapter2 extends RecyclerView.Adapter {
 
     Context context;
-    ArrayList<Item> items;
+    ArrayList<Item2> items2;
 
-
-    public MyAdapter(Context context, ArrayList<Item> items){
+    public MyAdapter2(Context context, ArrayList<Item2>items2){
         this.context= context;
-        this.items= items;
+        this.items2= items2;
     }
+
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater= LayoutInflater.from(context);
-        View itemView= inflater.inflate(R.layout.item_cardview, parent, false);
+        View itemview= inflater.inflate(R.layout.item_cardview2, parent, false);
 
-        VH holder= new VH(itemView);
-
+        VH holder= new VH(itemview);
         return holder;
 
 
@@ -39,32 +42,29 @@ public class MyAdapter extends RecyclerView.Adapter {
 
         VH vh= (VH)holder;
 
-        final Item item2= items.get(position);
+        Item2 item2= items2.get(position);
+        Glide.with(context).load(item2.img).into(vh.iv);
+        vh.title.setText(item2.title);
+        vh.address.setText(item2.address);
 
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent= new Intent(v.getContext(), CafeInfoActivity.class);
-                intent.putExtra("title", Item2.title);
-            }
-        });
     }
-
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return items2.size();
     }
 
     class VH extends RecyclerView.ViewHolder{
-
-        ImageView iv1;
+        ImageView iv;
+        TextView title;
+        TextView address;
 
         public VH(@NonNull View itemView) {
             super(itemView);
-            iv1= itemView.findViewById(R.id.iv);
+
+            iv= itemView.findViewById(R.id.iv);
+            title= itemView.findViewById(R.id.title);
+            address= itemView.findViewById(R.id.address);
 
         }
     }

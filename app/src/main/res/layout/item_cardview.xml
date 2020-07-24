@@ -14,7 +14,10 @@
                     android:id="@+id/iv"
                     android:layout_width="115dp"
                     android:layout_height="115dp"
-                    android:src="@drawable/tuuli" />
+                    android:src="@drawable/tuuli"
+                    android:clickable="true"
+                    android:onClick="clickimage"/>
+
         </androidx.cardview.widget.CardView>
 
 
