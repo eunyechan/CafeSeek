@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:padding="10dp"
+    android:background="#FFF6F1DC">
 
     <LinearLayout
         android:background="#FFF6F1DC"
@@ -48,8 +49,8 @@
                     android:id="@+id/title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="이름"
                     android:fontFamily="@font/hangel_l"
+                    android:text="이름"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="110dp"
                     android:layout_marginTop="20dp"
@@ -76,4 +77,6 @@
 
     </LinearLayout>
 
-</LinearLayout>
+
+
+</RelativeLayout>

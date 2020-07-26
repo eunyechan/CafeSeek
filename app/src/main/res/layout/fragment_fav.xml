@@ -2,11 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF6F1DC">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFF6F1DC"
+        android:src="@drawable/logotext" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -17,13 +27,14 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="70dp"
                 android:orientation="horizontal"
-                android:background="#FFF3F3ED">
+                android:background="#FFF6F1DC">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/hangel_l"
                     android:text="즐겨찾기"
                     android:textColor="#999999"
                     android:textSize="18sp"
@@ -33,6 +44,7 @@
                     android:layout_width="70dp"
                     android:layout_height="30dp"
                     android:text="더 보기"
+                    android:fontFamily="@font/hangel_l"
                     android:layout_marginLeft="210dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/buttonbackground"/>
@@ -44,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:layout_marginTop="120dp"
-                android:background="#FFF3F3ED"
+                android:background="#FFF6F1DC"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -203,16 +215,17 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="400dp"
-                android:background="#FFFFF7F1">
+                android:background="#FFF6F1DC">
 
 
                 <TextView
                     android:id="@+id/tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/hangel_l"
                     android:text="지역"
                     android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="#999999"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"/>
@@ -231,6 +244,7 @@
                     android:background="@drawable/buttonbackground"
                     android:layout_marginLeft="210dp"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/hangel_l"
                     android:text="카페" />
 
 
@@ -248,7 +262,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:layout_marginTop="445dp"
-                android:background="#FFFFF7F1"
+                android:background="#FFF6F1DC"
                 android:orientation="vertical"
                 android:weightSum="2">
 
@@ -398,6 +412,8 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
 
         </RelativeLayout>
 

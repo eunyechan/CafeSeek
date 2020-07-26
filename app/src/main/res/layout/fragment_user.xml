@@ -43,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
+        android:fontFamily="@font/hangel_l"
         android:layout_marginTop="160dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/buttonbackground"
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
         android:layout_marginLeft="10dp"
+        android:fontFamily="@font/hangel_l"
         android:background="@drawable/buttonbackground"
         android:text="image upload"
         android:padding="16dp"/>
@@ -63,6 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:text="정렬"
+        android:fontFamily="@font/hangel_l"
         android:background="@drawable/buttonbackground"
         android:layout_marginTop="240dp"
         android:layout_marginRight="20dp"

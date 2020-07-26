@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/hangel_l"
         android:layout_marginLeft="-9dp"
         android:layout_marginTop="280dp"
         android:text="SNS Login"
@@ -40,17 +41,7 @@
         android:paddingLeft="26dp"
         android:paddingRight="14dp"/>
 
-    <Button
-        android:id="@+id/logout_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="500dp"
-        android:backgroundTint="#00097287"
-        android:onClick="ClickLogout"
-        android:text="Logout"
-        android:textColor="#FF000000"
-        android:textSize="18sp" />
+
 
     <Button
         android:layout_width="wrap_content"
@@ -59,6 +50,7 @@
         android:layout_marginTop="500dp"
         android:backgroundTint="#00097287"
         android:text="입장"
+        android:fontFamily="@font/hangel_l"
         android:textColor="#FF000000"
         android:textSize="18sp"
         android:onClick="clickinput"/>
