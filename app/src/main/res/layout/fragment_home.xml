@@ -40,10 +40,13 @@
         android:layout_height="1dp"
         android:background="#FFBBBCBC"/>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
+        android:fadeScrollbars="false"
         android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
@@ -180,6 +183,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

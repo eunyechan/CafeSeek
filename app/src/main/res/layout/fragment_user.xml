@@ -96,13 +96,13 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood4"/>
+                    android:src="@drawable/white1"/>
 
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood1"/>
+                    android:src="@drawable/white2"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -130,7 +130,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/black3"/>
+                    android:src="@drawable/black2"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -158,7 +158,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood1"/>
+                    android:src="@drawable/liked_list_3"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -180,7 +180,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood3"/>
+                    android:src="@drawable/liked_list_6"/>
 
                 <ImageView
                     android:layout_weight="1"

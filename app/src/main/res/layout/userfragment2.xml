@@ -80,7 +80,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/white3" />
+                            android:src="@drawable/white4" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -153,7 +153,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/black3" />
+                            android:src="@drawable/black2" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -183,7 +183,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/black3" />
+                            android:src="@drawable/liked_list_12"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -205,7 +205,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/wood1" />
+                            android:src="@drawable/liked_list_6" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -226,7 +226,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/wood3" />
+                            android:src="@drawable/liked_list_1" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -256,7 +256,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/wood3" />
+                            android:src="@drawable/liked_list_9" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -351,7 +351,7 @@
                             android:layout_width="115dp"
                             android:layout_height="115dp"
                             android:layout_weight="1"
-                            android:src="@drawable/wood4" />
+                            android:src="@drawable/liked_list_2" />
 
                     </androidx.cardview.widget.CardView>
 

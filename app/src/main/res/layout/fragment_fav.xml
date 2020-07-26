@@ -82,7 +82,7 @@
                             <ImageView
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
-                                android:src="@drawable/wood1"/>
+                                android:src="@drawable/liked_list_11" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -199,7 +199,7 @@
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
                                 android:layout_weight="1"
-                                android:src="@drawable/wood2" />
+                                android:src="@drawable/liked_list_2" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -289,7 +289,7 @@
                             <ImageView
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
-                                android:src="@drawable/wood3" />
+                                android:src="@drawable/liked_list_3" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -310,7 +310,7 @@
                             <ImageView
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
-                                android:src="@drawable/black3" />
+                                android:src="@drawable/white1" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -331,7 +331,7 @@
                             <ImageView
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
-                                android:src="@drawable/white3" />
+                                android:src="@drawable/white4" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -362,7 +362,7 @@
                             <ImageView
                                 android:layout_width="115dp"
                                 android:layout_height="115dp"
-                                android:src="@drawable/wood4" />
+                                android:src="@drawable/white2" />
 
                         </androidx.cardview.widget.CardView>
 
