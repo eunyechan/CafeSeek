@@ -4,42 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:background="#FFF6F1DC">
 
 
-
-
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="cafe seek"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
-        android:textColor="#77341E"/>
-
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/logotext"/>
 
     <SearchView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="14dp"
-        >
-
+        android:background="@drawable/buttonbackground"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
     </SearchView>
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="인기검색어"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="#FF000000"/>
+        android:fontFamily="@font/hangel_l"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
 
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#FFBBBCBC"
+        android:layout_marginTop="10dp"/>
 
 
 </LinearLayout>

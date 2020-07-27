@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class FavoriteActivity2 extends AppCompatActivity {
 
     ArrayList<Item> arrayList= new ArrayList<>();
-    MyAdapter adapter;
+    MyAdapter3 adapter;
     RecyclerView recyclerView;
 
     @Override
@@ -46,7 +46,7 @@ public class FavoriteActivity2 extends AppCompatActivity {
         arrayList.add(new Item(R.drawable.white1));
 
 
-        adapter= new MyAdapter(this, arrayList);
+        adapter= new MyAdapter3(this, arrayList);
         recyclerView= findViewById(R.id.recycler1);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));

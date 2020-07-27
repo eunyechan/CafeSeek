@@ -43,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
+        android:fontFamily="@font/hangel_l"
         android:layout_marginTop="160dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/buttonbackground"
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
         android:layout_marginLeft="10dp"
+        android:fontFamily="@font/hangel_l"
         android:background="@drawable/buttonbackground"
         android:text="image upload"
         android:padding="16dp"/>
@@ -63,6 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:text="정렬"
+        android:fontFamily="@font/hangel_l"
         android:background="@drawable/buttonbackground"
         android:layout_marginTop="240dp"
         android:layout_marginRight="20dp"
@@ -93,13 +96,13 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood4"/>
+                    android:src="@drawable/white1"/>
 
                 <ImageView
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood1"/>
+                    android:src="@drawable/white2"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -127,7 +130,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/black3"/>
+                    android:src="@drawable/black2"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -155,7 +158,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood1"/>
+                    android:src="@drawable/liked_list_3"/>
 
                 <ImageView
                     android:layout_weight="1"
@@ -177,7 +180,7 @@
                     android:layout_weight="1"
                     android:layout_width="130dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/wood3"/>
+                    android:src="@drawable/liked_list_6"/>
 
                 <ImageView
                     android:layout_weight="1"

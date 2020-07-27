@@ -1,10 +1,12 @@
 package kr.co.eyc.cafeseek;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ScrollView;
+import android.widget.Toolbar;
 
 
 import androidx.annotation.NonNull;
@@ -34,9 +36,13 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerview4;
 
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
 
         white.add( new Item(R.drawable.white1));
         white.add( new Item(R.drawable.white2));
@@ -56,10 +62,10 @@ public class HomeFragment extends Fragment {
         wood.add( new Item(R.drawable.wood4));
 
 
-        cafeview.add( new Item(R.drawable.ca3));
-        cafeview.add( new Item(R.drawable.ca3));
-        cafeview.add( new Item(R.drawable.ca3));
-        cafeview.add( new Item(R.drawable.ca3));
+        cafeview.add( new Item(R.drawable.sunny_cafe_1));
+        cafeview.add( new Item(R.drawable.sunny_cafe_2));
+        cafeview.add( new Item(R.drawable.sunny_cafe_3));
+        cafeview.add( new Item(R.drawable.sunny_cafe_4));
 
         adapter1= new MyAdapter(getActivity(), white);
         adapter2= new MyAdapter(getActivity(), black);
@@ -74,6 +80,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
        ViewGroup rootView= (ViewGroup)inflater.inflate(R.layout.fragment_home, container, false);
 
+
+
        recyclerview1= rootView.findViewById(R.id.recycler1);
        recyclerview2= rootView.findViewById(R.id.recycler2);
        recyclerview3= rootView.findViewById(R.id.recycler3);
@@ -86,4 +94,5 @@ public class HomeFragment extends Fragment {
 
        return rootView;
     }
+
 }

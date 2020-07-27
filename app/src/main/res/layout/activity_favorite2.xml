@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavoriteActivity2">
+    tools:context=".FavoriteActivity2"
+    android:background="#FFF6F1DC">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="30dp"
+        android:fontFamily="@font/hangel_l"
         android:text="카페리스트"
         android:textColor="#FF000000"
         android:textStyle="bold"
