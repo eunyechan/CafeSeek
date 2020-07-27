@@ -46,8 +46,7 @@ public class MyAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(v.getContext(), CafeInfoActivity.class);
-                intent.putExtra("title", Item2.title);
+
             }
         });
     }
