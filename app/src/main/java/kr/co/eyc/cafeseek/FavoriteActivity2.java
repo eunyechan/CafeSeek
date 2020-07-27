@@ -25,25 +25,24 @@ public class FavoriteActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite2);
 
+        arrayList.add(new Item(R.drawable.wood1));
+        arrayList.add(new Item(R.drawable.wood3));
+        arrayList.add(new Item(R.drawable.wood4));
+        arrayList.add(new Item(R.drawable.wood2));
+        arrayList.add(new Item(R.drawable.white1));
+        arrayList.add(new Item(R.drawable.white3));
+        arrayList.add(new Item(R.drawable.white4));
+        arrayList.add(new Item(R.drawable.white2));
+        arrayList.add(new Item(R.drawable.liked_list_7));
+        arrayList.add(new Item(R.drawable.liked_list_6));
+        arrayList.add(new Item(R.drawable.liked_list_4));
+        arrayList.add(new Item(R.drawable.liked_list_2));
+        arrayList.add(new Item(R.drawable.black1));
+        arrayList.add(new Item(R.drawable.black2));
+        arrayList.add(new Item(R.drawable.black3));
+        arrayList.add(new Item(R.drawable.black4));
 
-        arrayList.add(new Item(R.drawable.white1));
-        arrayList.add(new Item(R.drawable.white2));
-        arrayList.add(new Item(R.drawable.white3));
-        arrayList.add(new Item(R.drawable.white4));
-        arrayList.add(new Item(R.drawable.wood2));
-        arrayList.add(new Item(R.drawable.wood4));
-        arrayList.add(new Item(R.drawable.wood3));
-        arrayList.add(new Item(R.drawable.wood1));
-        arrayList.add(new Item(R.drawable.white1));
-        arrayList.add(new Item(R.drawable.white1));
-        arrayList.add(new Item(R.drawable.white2));
-        arrayList.add(new Item(R.drawable.white3));
-        arrayList.add(new Item(R.drawable.white4));
-        arrayList.add(new Item(R.drawable.wood2));
-        arrayList.add(new Item(R.drawable.wood4));
-        arrayList.add(new Item(R.drawable.wood3));
-        arrayList.add(new Item(R.drawable.wood1));
-        arrayList.add(new Item(R.drawable.white1));
+
 
 
         adapter= new MyAdapter3(this, arrayList);

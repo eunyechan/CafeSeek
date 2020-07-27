@@ -43,6 +43,7 @@ public class MyAdapter2 extends RecyclerView.Adapter {
         VH vh= (VH)holder;
 
         Item2 item2= items2.get(position);
+
         Glide.with(context).load(item2.img).into(vh.iv);
         vh.title.setText(item2.title);
         vh.address.setText(item2.address);

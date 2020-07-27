@@ -1,79 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFF6F1DC">
 
-    <LinearLayout
-        android:background="#FFF6F1DC"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_marginTop="10dp">
 
-            <TextView
-                android:id="@+id/num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"/>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp">
-
-                <ImageView
-                    android:id="@+id/iv"
-                    android:layout_width="115dp"
-                    android:layout_height="115dp"
-                    android:src="@drawable/tuuli" />
-            </androidx.cardview.widget.CardView>
-
-            <RelativeLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="720dp"
+                android:orientation="vertical"/>
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="이름"
-                    android:fontFamily="@font/hangel_l"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="110dp"
-                    android:layout_marginTop="20dp"
-                    android:textSize="20sp"
-                    android:textColor="#FF000000"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/address"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/hangel_l"
-                    android:text="서울특별식 00구 00동 12-12"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="70dp"
-                    android:textColor="#FF000000"
-                    android:textStyle="bold"/>
-
-            </RelativeLayout>
+        </RelativeLayout>
 
 
-        </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
 
 </LinearLayout>

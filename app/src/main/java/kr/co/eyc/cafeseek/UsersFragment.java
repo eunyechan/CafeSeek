@@ -21,13 +21,12 @@ public class UsersFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_users, container, false);
 
-
+        viewPager= view.findViewById(R.id.viewpager);
         tabLayout= view.findViewById(R.id.tabs);
         tabLayout.addTab(tabLayout.newTab().setText("인기카페"));
         tabLayout.addTab(tabLayout.newTab().setText("개인"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        viewPager= view.findViewById(R.id.viewpager);
 
         TabAdapter tabAdapter= new TabAdapter(getChildFragmentManager(), 2);
 

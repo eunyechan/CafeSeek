@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
-import android.widget.Toolbar;
-
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,20 +43,20 @@ public class HomeFragment extends Fragment {
 
         white.add( new Item(R.drawable.white1));
         white.add( new Item(R.drawable.white2));
-        white.add( new Item(R.drawable.white3));
+        white.add( new Item(R.drawable.liked_list_1));
         white.add( new Item(R.drawable.white4));
 
 
         black.add( new Item(R.drawable.black1));
         black.add( new Item(R.drawable.black2));
-        black.add( new Item(R.drawable.black3));
+        black.add( new Item(R.drawable.liked_list_2));
         black.add( new Item(R.drawable.black4));
 
 
-        wood.add( new Item(R.drawable.wood1));
-        wood.add( new Item(R.drawable.wood2));
-        wood.add( new Item(R.drawable.wood3));
-        wood.add( new Item(R.drawable.wood4));
+        wood.add( new Item(R.drawable.liked_list_13));
+        wood.add( new Item(R.drawable.liked_list_15));
+        wood.add( new Item(R.drawable.liked_list_7));
+        wood.add( new Item(R.drawable.liked_list_6));
 
 
         cafeview.add( new Item(R.drawable.sunny_cafe_1));
@@ -74,6 +71,7 @@ public class HomeFragment extends Fragment {
 
 
     }
+
 
     @Nullable
     @Override

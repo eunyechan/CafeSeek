@@ -38,8 +38,8 @@ class MyAdapter4 extends RecyclerView.Adapter {
         VH vh= (VH)holder;
 
         final Item3 item3= items3.get(position);
-        Glide.with(context).load(item3.img).into(vh.iv);
 
+        Glide.with(context).load(item3.img).into(vh.iv);
         vh.num.setText(item3.num);
         vh.address.setText(item3.address);
         vh.title.setText(item3.name);
@@ -60,10 +60,10 @@ class MyAdapter4 extends RecyclerView.Adapter {
         public VH(@NonNull View itemView) {
             super(itemView);
 
-            iv= (ImageView)itemView.findViewById(R.id.iv);
-            num= (TextView)itemView.findViewById(R.id.num);
-            title= (TextView)itemView.findViewById(R.id.title);
-            address= (TextView)itemView.findViewById(R.id.address);
+            iv= itemView.findViewById(R.id.iv);
+            num= itemView.findViewById(R.id.num);
+            title= itemView.findViewById(R.id.title);
+            address= itemView.findViewById(R.id.address);
         }
     }
 }

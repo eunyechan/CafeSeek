@@ -38,7 +38,7 @@ public class Item3 {
         this.img = img;
     }
 
-    public Item3(int img) {
+    public Item3(String num, String name, String address, int img) {
         this.num = num;
         this.name = name;
         this.address = address;

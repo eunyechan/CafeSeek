@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF6F1DC">
+    android:background="#FFF6F1DC"
+    android:padding="8dp">
 
 
     <ImageView
@@ -16,10 +17,14 @@
 
     <SearchView
         android:layout_width="match_parent"
-        android:background="@drawable/buttonbackground"
+        android:background="@drawable/textbackground"
         android:layout_height="40dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="검색어를 입력하세요."
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
 
     </SearchView>
 
@@ -37,6 +42,63 @@
         android:layout_height="1dp"
         android:background="#FFBBBCBC"
         android:layout_marginTop="10dp"/>
+
+   <LinearLayout
+       android:weightSum="20"
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1.유목"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2.라토커피"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="3.커피냅로스터"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="4.업사이드 커피"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="5.섬광"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="6.땡스오트"
+           android:textColor="#FF000000"
+           android:layout_marginLeft="20dp" />
+
+   </LinearLayout>
 
 
 </LinearLayout>

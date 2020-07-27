@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="#FFF6F1DC">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -32,10 +33,11 @@
         android:layout_marginTop="25dp"/>
 
     <EditText
+        android:id="@+id/et"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:background="@drawable/textbackground"
-        android:hint="자기소개"
+        android:hint="  자기소개"
         android:layout_marginTop="75dp"/>
 
     <Button
@@ -44,22 +46,22 @@
         android:layout_height="40dp"
         android:layout_alignParentRight="true"
         android:fontFamily="@font/hangel_l"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="150dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/buttonbackground"
-        android:text="입력" />
+        android:text="저장"/>
 
 
     <Button
         android:id="@+id/btn_upload"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp"
         android:layout_marginLeft="10dp"
         android:fontFamily="@font/hangel_l"
         android:background="@drawable/buttonbackground"
         android:text="image upload"
-        android:padding="16dp"/>
+        android:padding="8dp"/>
 
     <Button
         android:layout_width="wrap_content"
