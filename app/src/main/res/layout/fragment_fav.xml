@@ -42,14 +42,14 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <Button
+                <!--<Button
                     android:layout_width="70dp"
                     android:layout_height="30dp"
                     android:text="더 보기"
                     android:fontFamily="@font/hangel_l"
                     android:layout_marginLeft="210dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/buttonbackground"/>
+                    android:background="@drawable/buttonbackground"/>-->
 
             </LinearLayout>
 

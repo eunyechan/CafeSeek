@@ -41,28 +41,28 @@ public class HomeFragment extends Fragment {
 
 
 
-        white.add( new Item(R.drawable.white1));
-        white.add( new Item(R.drawable.white2));
-        white.add( new Item(R.drawable.liked_list_1));
-        white.add( new Item(R.drawable.white4));
+        white.add( new Item("", "", R.drawable.white1));
+        white.add( new Item("", "", R.drawable.white2));
+        white.add( new Item("", "", R.drawable.liked_list_1));
+        white.add( new Item("", "", R.drawable.white4));
 
 
-        black.add( new Item(R.drawable.black1));
-        black.add( new Item(R.drawable.black2));
-        black.add( new Item(R.drawable.liked_list_2));
-        black.add( new Item(R.drawable.black4));
+        black.add( new Item("", "", R.drawable.black1));
+        black.add( new Item("", "", R.drawable.black2));
+        black.add( new Item("", "", R.drawable.liked_list_2));
+        black.add( new Item("", "", R.drawable.black4));
 
 
-        wood.add( new Item(R.drawable.liked_list_13));
-        wood.add( new Item(R.drawable.liked_list_15));
-        wood.add( new Item(R.drawable.liked_list_7));
-        wood.add( new Item(R.drawable.liked_list_6));
+        wood.add( new Item("", "", R.drawable.liked_list_13));
+        wood.add( new Item("", "", R.drawable.liked_list_15));
+        wood.add( new Item("", "", R.drawable.liked_list_7));
+        wood.add( new Item("", "", R.drawable.liked_list_6));
 
 
-        cafeview.add( new Item(R.drawable.sunny_cafe_1));
-        cafeview.add( new Item(R.drawable.sunny_cafe_2));
-        cafeview.add( new Item(R.drawable.sunny_cafe_3));
-        cafeview.add( new Item(R.drawable.sunny_cafe_4));
+        cafeview.add( new Item("", "", R.drawable.sunny_cafe_1));
+        cafeview.add( new Item("", "", R.drawable.sunny_cafe_2));
+        cafeview.add( new Item("", "", R.drawable.sunny_cafe_3));
+        cafeview.add( new Item("", "", R.drawable.sunny_cafe_4));
 
         adapter1= new MyAdapter(getActivity(), white);
         adapter2= new MyAdapter(getActivity(), black);

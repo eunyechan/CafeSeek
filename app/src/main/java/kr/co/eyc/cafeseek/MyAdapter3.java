@@ -29,9 +29,7 @@ public class MyAdapter3 extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater= LayoutInflater.from(context);
-        View itemView= inflater.inflate(R.layout.item_cardview, parent, false);
-
-
+        View itemView= inflater.inflate(R.layout.item_cardview2, parent, false);
 
         VH holder= new VH(itemView);
 
@@ -45,19 +43,12 @@ public class MyAdapter3 extends RecyclerView.Adapter {
 
         VH vh= (VH)holder;
 
-        final Item item2= items.get(position);
+        Item item= items.get(position);
 
-        Glide.with(context).load(item2.img).into(vh.iv1);
+        Glide.with(context).load(item.img).into(vh.iv);
+        vh.title.setText(item.title);
+        vh.address.setText(item.address);
 
-/*
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent(context, MyAdapter.class);
-                intent.putExtra("tv1", items.)
-
-            }
-        });*/
     }
 
 
@@ -68,11 +59,18 @@ public class MyAdapter3 extends RecyclerView.Adapter {
 
     class VH extends RecyclerView.ViewHolder{
 
-        ImageView iv1;
+        ImageView iv;
+        TextView title;
+        TextView address;
 
-        public VH(@NonNull View itemView) {
+
+        public VH(@NonNull final View itemView) {
             super(itemView);
-            iv1= itemView.findViewById(R.id.iv);
+
+
+            title= itemView.findViewById(R.id.title);
+            address= itemView.findViewById(R.id.address);
+            iv= itemView.findViewById(R.id.iv);
 
 
         }

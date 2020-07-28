@@ -4,65 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CafeInfoActivity">
+    tools:context=".CafeInfoActivity"
+    android:padding="8dp"
+    android:background="#FFF6F1DC">
 
 
-        <RelativeLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="115dp"
-            android:layout_marginTop="20dp">
+            android:layout_height="40dp"
+            android:src="@drawable/logotext"/>
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc"
+            android:layout_width="match_parent"
+            android:layout_height="635dp"
+            android:layout_marginTop="50dp">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:id="@+id/iv"
-                        android:layout_width="115dp"
-                        android:layout_height="115dp"
-                        android:src="@drawable/black4"/>
-
-                </androidx.cardview.widget.CardView>
-
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="카페1"
-                android:textColor="#FF999999"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="110dp"
-                android:layout_marginTop="10dp"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="서울특별시 성북구 00동 12-12"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="50dp"
-                android:textColor="#FF999999"
-                android:layout_marginTop="50dp"/>
+        </androidx.recyclerview.widget.RecyclerView>
 
 
-        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
 
 
-    <com.google.android.material.tabs.TabLayout
+
+    <!--<com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="180dp"
         android:elevation="1dp"
         app:tabGravity="fill"
         app:tabIndicatorColor="#FF000000"
@@ -73,6 +53,6 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tabs"/>
+        android:layout_below="@id/tabs"/>-->
 
 </RelativeLayout>
