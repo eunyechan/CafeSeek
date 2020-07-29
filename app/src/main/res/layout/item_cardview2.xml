@@ -10,7 +10,6 @@
         android:background="#FFF6F1DC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
          <LinearLayout
@@ -29,7 +28,7 @@
                       android:id="@+id/iv"
                       android:layout_width="115dp"
                       android:layout_height="115dp"
-                      android:src="@drawable/liked_list_1" />
+                      android:src="@drawable/liked_list_1"/>
 
               </androidx.cardview.widget.CardView>
 
@@ -78,8 +77,6 @@
          </LinearLayout>
 
     </LinearLayout>
-
-
 
 
 </RelativeLayout>

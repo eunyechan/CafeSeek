@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#FFF6F1DC">
+    android:background="#FFF6F1DC"
+    android:padding="8dp">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp">
+            android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rc"
                 android:layout_width="match_parent"
-                android:layout_height="720dp"
-                android:orientation="vertical"/>
+                android:layout_height="670dp">
 
-        </RelativeLayout>
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
 
 
     </ScrollView>
-
 </LinearLayout>

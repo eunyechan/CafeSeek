@@ -24,11 +24,29 @@ public class CafeInfoActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     Context context;
 
+    ImageView iv;
+    TextView tv_title;
+    TextView tv_address;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cafe_info);
+
+       /* Intent intent= getIntent();
+        String title= intent.getStringExtra("title");
+        String address= intent.getStringExtra("address");
+        int imgid= intent.getIntExtra("img", R.drawable.black1);
+
+        iv= findViewById(R.id.iv);
+        tv_title= findViewById(R.id.title);
+        tv_address= findViewById(R.id.address);
+
+        tv_title.setText(title);
+        tv_address.setText(address);*/
+        //iv.setImageURI(R.drawable.black1)
+
 
         items.add( new Item( "커피냅로스터스", "서울시 마포구 성미산로 27길 70", R.drawable.sunny_cafe_1));
         items.add( new Item( "벤허", "서울시 용산구 이태원로 42길 62", R.drawable.sunny_cafe_2));
@@ -44,7 +62,7 @@ public class CafeInfoActivity extends AppCompatActivity {
         items.add( new Item( "땡스오트", "서울시 마포구 연남동 375-113", R.drawable.liked_list_2));
         items.add( new Item( "라토커피", "청주시 상당구 성안로 74번길 94-12", R.drawable.black1));
         items.add( new Item( "섬광", "서울시 중구 충무로 4가 32-16", R.drawable.black2));
-        items.add( new Item( "콜링우드", "수원시 팔달구 정조로 888", R.drawable.black3));
+        items.add( new Item( "tulli", "서울시 서대문구 홍제천로 198 ", R.drawable.white4));
         items.add( new Item( "파온", "서울시 한남동 745-13", R.drawable.black4));
 
         myAdapter3= new MyAdapter3(this, items);
@@ -55,7 +73,7 @@ public class CafeInfoActivity extends AppCompatActivity {
         /*Intent intent= getIntent();
         String title= intent.getStringExtra("title");
         String address= intent.getStringExtra("address");
-        int imgid= intent.getIntExtra("img", R.drawable.black1);
+
 
         Glide.with(this).load(imgid).into(iv);
 

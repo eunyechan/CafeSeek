@@ -25,18 +25,16 @@ public class userfragment2 extends Fragment {
 
         arrayList.add(new Item("", "", R.drawable.white1));
         arrayList.add(new Item("", "", R.drawable.white2));
-        arrayList.add(new Item("", "", R.drawable.white3));
         arrayList.add(new Item("", "", R.drawable.white4));
-        arrayList.add(new Item("", "", R.drawable.wood1));
-        arrayList.add(new Item("", "", R.drawable.wood2));
-        arrayList.add(new Item("", "", R.drawable.white3));
-        arrayList.add(new Item("", "", R.drawable.wood4));
+        arrayList.add(new Item("", "", R.drawable.liked_list_3));
+        arrayList.add(new Item("", "", R.drawable.liked_list_15));
+        arrayList.add(new Item("", "", R.drawable.liked_list_12));
+        arrayList.add(new Item("", "", R.drawable.liked_list_14));
         arrayList.add(new Item("", "", R.drawable.liked_list_1));
         arrayList.add(new Item("", "", R.drawable.liked_list_2));
         arrayList.add(new Item("", "", R.drawable.black4));
         arrayList.add(new Item("", "", R.drawable.black2));
         arrayList.add(new Item("", "", R.drawable.black1));
-        arrayList.add(new Item("", "", R.drawable.black3));
         arrayList.add(new Item("", "", R.drawable.liked_list_13));
         arrayList.add(new Item("", "", R.drawable.liked_list_6));
         arrayList.add(new Item("", "", R.drawable.liked_list_10));

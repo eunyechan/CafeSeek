@@ -14,7 +14,8 @@
                     android:id="@+id/iv"
                     android:layout_width="115dp"
                     android:layout_height="115dp"
-                    android:src="@drawable/liked_list_1"/>
+                    android:src="@drawable/liked_list_1"
+                    android:clickable="true"/>
 
 
         </androidx.cardview.widget.CardView>

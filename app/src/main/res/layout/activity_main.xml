@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#FFF3F3ED">
 
 
 
@@ -46,12 +47,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="500dp"
-        android:backgroundTint="#00097287"
+        android:layout_below="@id/facebook_login"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
         android:text="입장"
-        android:fontFamily="@font/hangel_l"
         android:textColor="#FF000000"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/hangel_l"
         android:textSize="18sp"
         android:onClick="clickinput"/>
 

@@ -26,7 +26,7 @@ public class FavoriteActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite2);
 
-        arrayList.add(new Item("", "", R.drawable.sunny_cafe_1));
+        arrayList.add(new Item("tsd", "ddd", R.drawable.sunny_cafe_1));
         arrayList.add(new Item("", "", R.drawable.sunny_cafe_2));
         arrayList.add(new Item("", "", R.drawable.sunny_cafe_3));
         arrayList.add(new Item("", "", R.drawable.sunny_cafe_4));
@@ -40,8 +40,9 @@ public class FavoriteActivity2 extends AppCompatActivity {
         arrayList.add(new Item("", "", R.drawable.liked_list_2));
         arrayList.add(new Item("", "", R.drawable.black1));
         arrayList.add(new Item("", "", R.drawable.black2));
-        arrayList.add(new Item("", "", R.drawable.black3));
+        arrayList.add(new Item("", "", R.drawable.white4));
         arrayList.add(new Item("", "", R.drawable.black4));
+
 
 
 

@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +26,7 @@ public class MyAdapter extends RecyclerView.Adapter {
         this.context= context;
         this.items= items;
     }
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -56,10 +59,25 @@ public class MyAdapter extends RecyclerView.Adapter {
     class VH extends RecyclerView.ViewHolder{
 
         ImageView iv1;
+        TextView title;
+        TextView address;
 
         public VH(@NonNull View itemView) {
             super(itemView);
             iv1= itemView.findViewById(R.id.iv);
+
+            /*itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent= new Intent(context, CafeInfoActivity.class);
+                    intent.putExtra("title", items.get(getLayoutPosition()).title);
+                    intent.putExtra("address", items.get(getLayoutPosition()).address);
+                    intent.putExtra("iv1", items.get(getLayoutPosition()).img);
+
+                    context.startActivity(intent);
+                }
+            });*/
 
         }
     }

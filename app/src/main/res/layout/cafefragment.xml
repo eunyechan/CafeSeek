@@ -12,13 +12,12 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="10dp">
+            android:layout_height="match_parent">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rc"
                 android:layout_width="match_parent"
-                android:layout_height="720dp"
+                android:layout_height="730dp"
                 android:orientation="vertical"/>
 
         </RelativeLayout>

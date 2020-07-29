@@ -26,7 +26,7 @@ public class cafefragment extends Fragment {
 
         list.add( new Item3("1", "라토커피", "청주시 상당구 성안로 74번길 94-12", R.drawable.black1));
         list.add( new Item3("2", "섬광", "서울시 중구 충무로 4가 32-16", R.drawable.black2));
-        list.add( new Item3("3", "콜링우드", "수원시 팔달구 정조로 888", R.drawable.black3));
+        list.add( new Item3("3", "3FLOBBY", "서울시 용산구 한강대로 15길 19-19", R.drawable.liked_list_10));
         list.add( new Item3("4", "파온", "서울시 한남동 745-13", R.drawable.black4));
         list.add( new Item3("5", "섬광", "서울시 중구 충무로 4가 32-16", R.drawable.liked_list_1));
         list.add( new Item3("6", "땡스오트", "서울시 마포구 연남동 375-113", R.drawable.liked_list_2));
@@ -52,8 +52,7 @@ public class cafefragment extends Fragment {
         list.add( new Item3("26", "택스커피", "서울시 성북구 삼선교로 14길 35", R.drawable.sunny_cafe_6));
         list.add( new Item3("27", "세이트커피", "서울시 마포구 월드컵북로 42가길 28", R.drawable.white1));
         list.add( new Item3("28", "세이트커피", "서울시 마포구 월드컵북로 42가길 28", R.drawable.white2));
-        list.add( new Item3("29", "노맨틱", "서울시 용산구 두텁바위로 59-1", R.drawable.white3));
-        list.add( new Item3("30", "tulli", "서울시 서대문구 홍제천로 198 ", R.drawable.white4));
+        list.add( new Item3("29", "tulli", "서울시 서대문구 홍제천로 198 ", R.drawable.white4));
     }
 
     @Nullable
